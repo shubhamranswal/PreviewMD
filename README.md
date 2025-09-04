@@ -25,10 +25,12 @@ PreviewMD is designed for writers and developers who want a clean, fast way to e
 ## 📁 Project Structure
 
 ```markdown
-markdown-previewer/
+(root)/
 ├── index.html       # Main layout and structure
-├── style.css        # App styles and layout
-├── script.js        # App logic (editor, preview, toolbar, export)
+├── utils
+├──── style.css      # App styles and layout
+├──── script.js      # App logic (editor, preview, toolbar, export)
+├── LICENSE.md       # LICENSE file
 └── README.md        # Project info
 
 ````
@@ -87,3 +89,4 @@ Built with ❤️ by ***Shubham Singh Ranswal*** [(know more)](https://shubham-r
 
 
 ---
+
