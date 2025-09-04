@@ -1,7 +1,7 @@
 # 📝 PreviewMD
 *See your Markdown like never before*
 
-PreviewMD is the Markdown previewer tool from the ClearDrafts suite — offering a live, GitHub-style Markdown rendering experience with syntax highlighting, keyboard shortcuts, export options, and more.
+PreviewMD is the Markdown previewer tool from the [***ClearDrafts***](https://github.com/shubhamranswal/ClearDrafts) suite — offering a live, GitHub-style Markdown rendering experience with syntax highlighting, keyboard shortcuts, export options, and more.
 
 PreviewMD is designed for writers and developers who want a clean, fast way to edit and preview Markdown documents.
 
@@ -77,11 +77,13 @@ markdown-previewer/
 ## 📜 License
 
 MIT — feel free to modify, extend, and use this freely.
+[Read here](https://github.com/shubhamranswal/PreviewMD/blob/main/LICENSE.md)
 
 ---
 
 ## 🙋‍♂️ Author
 
 Built with ❤️ by ***Shubham Singh Ranswal*** [(know more)](https://shubham-ranswal.web.app/)
+
 
 ---
