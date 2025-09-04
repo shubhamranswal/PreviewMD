@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PreviewMD - See your Markdown like never before</title>
+    <link rel="stylesheet" href="./utils/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+</head>
+
+<body>
+    <header>PreviewMD - See your Markdown like never before</header>
+
+    <main>
+        <section id="editor">
+            <div id="toolbar" aria-label="Markdown editor toolbar">
+                <button title="Heading 1 (H1)" onclick="insertAtCursor('# ')">H1</button>
+                <button title="Heading 2 (H2)" onclick="insertAtCursor('## ')">H2</button>
+                <button title="Heading 3 (H3)" onclick="insertAtCursor('### ')">H3</button>
+                <button title="Bold (Ctrl+B)" onclick="wrapSelection('**')"><b>B</b></button>
+                <button title="Italic (Ctrl+I)" onclick="wrapSelection('*')"><i>I</i></button>
+                <button title="Code (Ctrl+E)" onclick="wrapSelection('`')">&lt;/&gt;</button>
+                <button title="Blockquote" onclick="insertAtCursor('> ')">&ldquo;</button>
+                <button title="Ordered List" onclick="insertAtCursor('1. ')">OL</button>
+                <button title="Unordered List" onclick="insertAtCursor('- ')">UL</button>
+                <button title="Task List" onclick="insertAtCursor('- [ ] ')">&#9744;</button>
+                <button title="Table" onclick="insertTable()">Table</button>
+                <button title="Insert Link" onclick="insertLink()">Link</button>
+                <button title="Insert Image" onclick="insertImage()">Image</button>
+                <button title="Horizontal Rule" onclick="insertAtCursor('\n---\n')">HR</button>
+            </div>
+            <textarea id="markdown" spellcheck="false" aria-label="Markdown input editor"
+                placeholder="Type markdown here or drag & drop images"></textarea>
+        </section>
+
+        <section id="preview-section">
+            <div id="toolbar-export" aria-label="Export markdown or html">
+                <button id="export-md" title="Export Markdown (.md)">Export MD</button>
+                <button id="export-html" title="Export HTML (.html)">Export HTML</button>
+            </div>
+            <div id="preview" aria-live="polite" aria-label="Markdown preview"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.3/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="./utils/script.js"></script>
+</body>
+
+</html>
